@@ -39,6 +39,7 @@ const languages = [
 	'ug-CN',
 	'uk-UA',
 	'vi-VN',
+	'xi-LZ',
 	'zh-CN',
 	'zh-TW',
 ];
