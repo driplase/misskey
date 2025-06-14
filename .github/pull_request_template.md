@@ -1,7 +1,12 @@
+<!--
+  このMisskeyのフォークはdriplaseによる個人的な改造がされています
+  本家様はこちら： https://github.com/misskey-dev/misskey
+-->
+
 <!-- ℹ お読みください / README
 PRありがとうございます！ PRを作成する前に、コントリビューションガイドをご確認ください:
 Thank you for your PR! Before creating a PR, please check the contribution guide:
-https://github.com/misskey-dev/misskey/blob/develop/CONTRIBUTING.md
+https://github.com/driplase/misskey/blob/develop/CONTRIBUTING.md
 -->
 
 ## What
