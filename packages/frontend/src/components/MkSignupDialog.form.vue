@@ -14,7 +14,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 				<template #label>{{ i18n.ts.invitationCode }}</template>
 				<template #prefix><i class="ti ti-key"></i></template>
 			</MkInput>
-			<MkInput v-model="username" type="text" pattern="^[a-zA-Z0-9_]{1,20}$" :spellcheck="false" autocomplete="username" required data-cy-signup-username @update:modelValue="onChangeUsername">
+			<MkInput v-model="username" type="text" pattern="^[a-zA-Z0-9_]{1,3}$" :spellcheck="false" autocomplete="username" required data-cy-signup-username @update:modelValue="onChangeUsername">
 				<template #label>{{ i18n.ts.username }} <div v-tooltip:dialog="i18n.ts.usernameInfo" class="_button _help"><i class="ti ti-help-circle"></i></div></template>
 				<template #prefix>@</template>
 				<template #suffix>@{{ host }}</template>
@@ -177,7 +177,7 @@ function onChangeUsername(): void {
 		const err =
 			!username.value.match(/^[a-zA-Z0-9_]+$/) ? 'invalid-format' :
 			username.value.length < 1 ? 'min-range' :
-			username.value.length > 20 ? 'max-range' :
+			username.value.length > 3 ? 'max-range' :
 			null;
 
 		if (err) {
