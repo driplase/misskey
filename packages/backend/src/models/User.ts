@@ -316,7 +316,7 @@ export type MiPartialRemoteUser = Partial<MiUser> & {
 	uri: string;
 };
 
-export const localUsernameSchema = { type: 'string', pattern: /^\w{1,20}$/.toString().slice(1, -1) } as const;
+export const localUsernameSchema = { type: 'string', pattern: /^\w{1,3}$/.toString().slice(1, -1) } as const;
 export const passwordSchema = { type: 'string', minLength: 1 } as const;
 export const nameSchema = { type: 'string', minLength: 1, maxLength: 50 } as const;
 export const descriptionSchema = { type: 'string', minLength: 1, maxLength: 1500 } as const;
